@@ -16,7 +16,7 @@ export class BlogdetailsComponent implements OnInit {
   public newpostForm: FormGroup;
   constructor(private location: Location,
     private activatedRoute: ActivatedRoute,
-    private authService: AuthserviceService,
+    public authService: AuthserviceService,
     private router: Router) { }
   currentUrl
   message

@@ -18,7 +18,8 @@ export class IndexComponent implements OnInit {
     private authService: AuthserviceService,
     private router: Router) { }
 
-
+    term;
+    p;
   ngOnInit() {
     this.getAllBlogs()
   }
