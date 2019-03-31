@@ -110,7 +110,7 @@ module.exports = (router) => {
                     } else {
                         blog.title = req.body.title;
                         blog.body = req.body.body;
-                        link: req.body.link
+                        blog.link= req.body.link
                         blog.save((err) => {
                             if (err) {
                                 res.json({ success: false, message: err })
